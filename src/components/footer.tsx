@@ -85,9 +85,20 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-shell/10 pt-8 text-[0.8rem] text-shell/45 sm:flex-row sm:items-center">
           <p>© {new Date().getFullYear()} Blue Hole Villas · Hosted by {CONTACT.host}</p>
-          <p className="tracking-wide">
-            Queen’s Highway · Congo Town · South Andros · {CONTACT.coordinates}
-          </p>
+          <div className="flex flex-col gap-2 tracking-wide sm:items-end">
+            <p>Queen’s Highway · Congo Town · South Andros · {CONTACT.coordinates}</p>
+            <p>
+              Designed &amp; Developed by{" "}
+              <a
+                href="https://www.infycrestsolutions.com"
+                target="_blank"
+                rel="noreferrer"
+                className="link-sweep text-shell/70"
+              >
+                InfyCrest Solutions
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
