@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Fraunces, Inter } from "next/font/google";
+import { VILLA_IMAGE } from "@/lib/site";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     title: "Blue Hole Villas — South Andros, The Bahamas",
     description:
       "Your private island escape: secluded villas, turquoise water and the natural beauty of Andros.",
-    images: ["/images/hero.jpg"],
+    images: [VILLA_IMAGE(17)],
     type: "website",
   },
 };

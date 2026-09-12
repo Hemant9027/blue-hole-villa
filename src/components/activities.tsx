@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { ArrowUpRight, Fish, Shell, Waves } from "lucide-react";
 import Reveal from "@/components/reveal";
+import { VILLA_IMAGE } from "@/lib/site";
 
 const ACTIVITIES = [
   {
     icon: Fish,
     tag: "Guides arranged",
-    src: "/images/fishing.jpg",
+    src: VILLA_IMAGE(27),
     alt: "Fly fisherman casting on glassy turquoise flats at golden hour",
     title: "Fly-Fishing",
     blurb:
@@ -15,7 +16,7 @@ const ACTIVITIES = [
   {
     icon: Waves,
     tag: "By arrangement",
-    src: "/images/kayak.jpg",
+    src: VILLA_IMAGE(2),
     alt: "Two kayaks gliding through a clear mangrove creek",
     title: "Kayaking",
     blurb:
@@ -24,7 +25,7 @@ const ACTIVITIES = [
   {
     icon: Shell,
     tag: "Just offshore",
-    src: "/images/snorkel.jpg",
+    src: VILLA_IMAGE(14),
     alt: "Snorkeler floating above coral and tropical fish",
     title: "Snorkeling & the Reef",
     blurb:

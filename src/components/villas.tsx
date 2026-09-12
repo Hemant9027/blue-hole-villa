@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowUpRight, BedDouble, CookingPot, Flame, Armchair, Refrigerator, ShowerHead, UtensilsCrossed, Wifi } from "lucide-react";
 import Reveal from "@/components/reveal";
+import { VILLA_IMAGE } from "@/lib/site";
 
 const AMENITIES = [
   { icon: BedDouble, title: "Up to 2 adults", desc: "or a small family of 4" },
@@ -49,7 +50,7 @@ export default function Villas() {
           <Reveal className="lg:col-span-7">
             <figure className="group relative aspect-[4/3] overflow-hidden rounded-[2rem] lg:aspect-auto lg:h-full">
               <Image
-                src="/images/villa-exterior.jpg"
+                src={VILLA_IMAGE(8)}
                 alt="A uniquely shaped island villa tucked among coconut palms"
                 fill
                 sizes="(min-width: 1024px) 58vw, 100vw"
@@ -63,7 +64,7 @@ export default function Villas() {
           <Reveal delay={140} className="lg:col-span-5">
             <figure className="group relative aspect-[4/3] overflow-hidden rounded-[2rem] lg:aspect-auto lg:h-full">
               <Image
-                src="/images/villa-interior.jpg"
+                src={VILLA_IMAGE(11)}
                 alt="Bright villa kitchen and dining area with views of the sea"
                 fill
                 sizes="(min-width: 1024px) 42vw, 100vw"

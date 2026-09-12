@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowDown, Droplets, Plane, Waves } from "lucide-react";
+import { VILLA_IMAGE } from "@/lib/site";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
@@ -32,7 +33,7 @@ export default function Hero() {
           muted
           loop
           playsInline
-          poster="/images/hero.jpg"
+          poster={VILLA_IMAGE(17)}
           aria-hidden="true"
         >
           <source

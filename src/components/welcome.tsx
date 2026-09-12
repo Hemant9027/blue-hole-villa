@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { CookingPot, Heart, Users, Wifi } from "lucide-react";
 import Reveal from "@/components/reveal";
+import { VILLA_IMAGE } from "@/lib/site";
 import { CONTACT } from "@/lib/site";
 
 const FEATURES = [
@@ -79,7 +80,7 @@ export default function Welcome() {
             <Reveal delay={120} className="relative ml-auto max-w-md">
               <div className="relative aspect-[3/4] overflow-hidden rounded-b-[1.75rem] rounded-t-full border-[10px] border-foam shadow-[0_40px_80px_-30px_rgba(6,38,46,0.35)]">
                 <Image
-                  src="/images/palms.jpg"
+                  src={VILLA_IMAGE(19)}
                   alt="Sandy footpath through a coconut palm grove leading to the sea"
                   fill
                   sizes="(min-width: 1024px) 38vw, 90vw"
@@ -108,7 +109,7 @@ export default function Welcome() {
               className="absolute -bottom-8 left-0 hidden w-52 rotate-[-6deg] rounded-2xl border-8 border-white object-cover shadow-xl sm:block md:w-60"
             >
               <Image
-                src="/images/sunset.jpg"
+                src={VILLA_IMAGE(6)}
                 alt="Golden sunset over calm water from the beach"
                 width={480}
                 height={360}

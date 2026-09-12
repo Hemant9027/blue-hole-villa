@@ -1,11 +1,12 @@
 import ParallaxImage from "@/components/parallax-image";
 import Reveal from "@/components/reveal";
+import { VILLA_IMAGE } from "@/lib/site";
 
 export default function Beach() {
   return (
     <section id="beach" className="relative bg-abyss text-shell">
       <ParallaxImage
-        src="/images/beach.jpg"
+        src={VILLA_IMAGE(4)}
         alt="Hammock strung between palms on the secluded private beach"
         className="h-[82vh] min-h-[34rem]"
       />

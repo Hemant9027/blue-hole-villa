@@ -1,6 +1,7 @@
 import { MapPin, TreePine, Waves } from "lucide-react";
 import ParallaxImage from "@/components/parallax-image";
 import Reveal from "@/components/reveal";
+import { VILLA_IMAGE } from "@/lib/site";
 
 const POINTS = [
   {
@@ -28,7 +29,7 @@ export default function BlueHoles() {
           {/* Image */}
           <Reveal className="relative">
             <ParallaxImage
-              src="/images/blue-hole.jpg"
+              src={VILLA_IMAGE(23)}
               alt="Aerial view of a circular deep blue hole ringed by turquoise shallows"
               className="aspect-[4/5] rounded-[2rem] shadow-[0_50px_90px_-40px_rgba(6,38,46,0.45)] md:aspect-square"
               sizes="(min-width: 1024px) 50vw, 100vw"
